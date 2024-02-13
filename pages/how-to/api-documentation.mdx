@@ -1,0 +1,71 @@
+
+Of course! Here's the Nyotah Cloud API documentation translated into English:
+
+---
+
+# Nyotah Cloud API Documentation
+
+Welcome to the Nyotah Cloud API documentation. This documentation describes the different available resources, associated endpoints, and HTTP methods used to interact with the Nyotah Cloud service through its API.
+
+## Authentication
+
+All requests to the Nyotah Cloud API must be authenticated. Authentication is achieved by including an access token in the `Authorization` header of the HTTP request. To obtain an access token, use the appropriate authentication mechanism according to the type of user (standard user, administrator, etc.).
+
+Example authentication header:
+```
+Authorization: Bearer <access_token>
+```
+
+## Available Resources
+
+### 1. Virtual Machines (VMs)
+
+Virtual Machines are key resources in Nyotah Cloud. They allow users to deploy virtual computing environments to run applications and services.
+
+#### Endpoints:
+
+- `GET /api/vms`: Retrieve the list of all virtual machines.
+- `POST /api/vms`: Create a new virtual machine.
+- `GET /api/vms/{id}`: Retrieve details of a specific virtual machine.
+- `PUT /api/vms/{id}`: Update parameters of a virtual machine.
+- `DELETE /api/vms/{id}`: Delete a virtual machine.
+
+### 2. Networks
+
+Virtual Networks allow users to connect and segment their virtual machines into isolated network environments.
+
+#### Endpoints:
+
+- `GET /api/networks`: Retrieve the list of all virtual networks.
+- `POST /api/networks`: Create a new virtual network.
+- `GET /api/networks/{id}`: Retrieve details of a specific virtual network.
+- `PUT /api/networks/{id}`: Update parameters of a virtual network.
+- `DELETE /api/networks/{id}`: Delete a virtual network.
+
+## Responses
+
+Nyotah Cloud API responses are typically in JSON format and follow a consistent structure. In case of errors, appropriate HTTP status codes are returned with explicit error messages to facilitate debugging.
+
+Example successful response (200 OK):
+```json
+{
+  "id": "vm-123",
+  "name": "MyVM",
+  "status": "running",
+  "cpu": 2,
+  "memory": 4096,
+  "storage": 50
+}
+```
+
+Example error response (401 Unauthorized):
+```json
+{
+  "error": "Unauthorized",
+  "message": "Invalid access token"
+}
+```
+
+---
+
+This documentation provides an overview of the Nyotah Cloud API along with examples of using the main resources. For detailed information about each endpoint and its parameters, please refer to the specific API documentation or use tools such as Swagger to explore the API interactively. If you have any questions or encounter issues, feel free to contact our support team for assistance.

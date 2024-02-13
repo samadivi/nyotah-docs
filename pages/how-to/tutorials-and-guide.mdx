@@ -1,0 +1,54 @@
+Certainly! Below is an example tutorial and guide for Nyotah Cloud:
+
+---
+
+# Tutorial: Deploying a Website with Nyotah Cloud
+
+In this tutorial, you'll learn how to deploy a simple website using Nyotah Cloud. By following these steps, you'll be able to set up a virtual machine, configure it to host a website, and access the website from your browser.
+
+## Prerequisites
+
+Before you begin, make sure you have:
+
+- A Nyotah Cloud account
+- Basic knowledge of HTML, CSS, and web hosting concepts
+
+## Step 1: Create a Virtual Machine
+
+1. Log in to your Nyotah Cloud dashboard.
+2. Click on the "New VM" or "Deploy VM" button.
+3. Choose an operating system (e.g., Ubuntu) and configure the VM size and resources.
+4. Click "Deploy" to create the VM.
+
+## Step 2: Connect to the Virtual Machine
+
+1. Once the VM is deployed, note down its IP address.
+2. Use an SSH client (e.g., PuTTY) to connect to the VM using the IP address and credentials provided.
+3. Once connected, you'll have access to the command line interface of the VM.
+
+## Step 3: Set Up the Web Server
+
+1. Install a web server software such as Apache or Nginx on the VM.
+   ```bash
+   sudo apt-get update
+   sudo apt-get install apache2
+   ```
+2. Place your website files in the appropriate directory (e.g., `/var/www/html` for Apache).
+3. Test the web server by accessing the VM's IP address from your browser.
+
+## Step 4: Access Your Website
+
+1. Open your web browser.
+2. Enter the IP address of your VM in the address bar.
+3. You should see your website displayed in the browser.
+
+Congratulations! You have successfully deployed a website using Nyotah Cloud.
+
+## Additional Resources
+
+- [Nyotah Cloud Documentation](https://www.nyotahcloud.com/docs): Explore more features and capabilities of Nyotah Cloud.
+- [Nyotah Cloud Community Forum](https://community.nyotahcloud.com): Engage with other users, ask questions, and share your experiences.
+
+---
+
+This tutorial provides a basic overview of deploying a website with Nyotah Cloud. Experiment with different configurations and features to customize your website deployment according to your needs. If you encounter any issues or have questions, don't hesitate to reach out to our support team for assistance. Happy coding!

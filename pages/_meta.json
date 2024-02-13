@@ -1,11 +1,11 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "get-started": "Get Started",
+  "how-to": "How to",
+  "api-documentation": "Api Documentation",
+  "tutorials-and-guide": "Tutorials and Guide",
+  "faq":"FAQ",
+  "security-policy":"security-policy",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
